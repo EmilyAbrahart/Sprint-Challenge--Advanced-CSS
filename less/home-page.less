@@ -1,16 +1,17 @@
 // Home Content
 .home {
-
   .intro {
+    img {
+      border-radius: 0.5rem;
+    }
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -57,13 +58,14 @@
       }
 
       .btn {
+        .button-style(@btn-bg-color, @porcelain);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -71,4 +73,4 @@
       }
     }
   }
-}// home
+} // home
