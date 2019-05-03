@@ -1,1 +1,26 @@
 // Navigation code here
+.nav-container {
+  .flex(column, center, center);
+  width: 100%;
+  padding: 1rem;
+  background-color: @nav-bg;
+  opacity: 0.8;
+  border-bottom: 0.1rem solid @nav-border;
+  position: fixed;
+
+  .logo {
+    color: @nav-font;
+    padding-bottom: 2rem;
+  }
+
+  nav {
+    .flex(row, space-evenly, baseline);
+
+    a {
+      text-decoration: none;
+      color: @nav-font;
+      padding: 0 1.5rem;
+      font-weight: bold;
+    }
+  }
+}

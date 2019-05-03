@@ -1,1 +1,38 @@
 // Mixins Here
+
+// Flexbox
+.flex(@flexDirection, @justifyContent, @alignItems) {
+  display: flex;
+  flex-direction: @flexDirection;
+  justify-content: @justifyContent;
+  align-items: @alignItems;
+}
+
+// Button
+.button-style(@bgColor, @bttnColor) {
+  background-color: @bgColor;
+  color: @bttnColor;
+  font-size: 1.8rem;
+  border-radius: 0.3em;
+  border: none;
+  padding: 0.5em 1em;
+
+  &:hover {
+    background-color: @bttnColor;
+    color: @bgColor;
+  }
+}
+
+// Img animation
+.img-animation {
+  transition: transform 0.8s;
+
+  &:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+
+    @media @phone {
+      transform: (1.1);
+    }
+  }
+}
